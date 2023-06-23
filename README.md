@@ -1,1 +1,17 @@
 # thesis_neural-tracking
+
+This repository contains the code of my bachelor thesis on using neural tracking to analyse infant brain responses to familiar compared to unfamiliar voices. It is based on the paper by Jessen, S., Obleser, J., & Tune, S. (2021). Neural tracking in infants–An analytical tool for multisensory social processing in development. Developmental Cognitive Neuroscience, 52, 101034.
+
+All analyses are conducted in MATLAB 2020a (The MAthWorks, Inc., Natick, MA), in which the MATLAB toolbox Fieldtrip, the multivariate temporal response function (mTRF) toolbox version 2.3 and the NLS toolbox were used. 
+
+# Contents:
+- Preprocessing of neural data (code was already given, only adapted to the data set)
+- Stimulus preparation (code was already given, only adapted to the data set)
+- Alignment of stimulus and neural data (code was already given, only adapted to the data set)
+- Analysis of the neural tracking (code was already given, only adapted to the data set)
+    - Encoding Model
+    - Decoding Model
+- Plotting of the encoding model and statistical analysis (written by me)
+- Plotting of the decoding model (written by me)
+- Statistical analysis of the model performance (written by me)
+- ICA component exclusion (written by me)
