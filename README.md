@@ -2,7 +2,7 @@
 
 This repository contains the code of my bachelor thesis on using neural tracking to analyse infant brain responses to familiar compared to unfamiliar voices. It is based on the paper by Jessen, S., Obleser, J., & Tune, S. (2021). Neural tracking in infants–An analytical tool for multisensory social processing in development. Developmental Cognitive Neuroscience, 52, 101034.
 
-All analyses are conducted in MATLAB 2020a (The MAthWorks, Inc., Natick, MA), in which the MATLAB toolbox Fieldtrip (https://github.com/fieldtrip/fieldtrip), the multivariate temporal response function (mTRF) toolbox version 2.3 (https://github.com/mickcrosse/mTRF-Toolbox), and the NLS toolbox by Ru (2001) were used. 
+All analyses are conducted in MATLAB 2020a (The MAthWorks, Inc., Natick, MA), in which the MATLAB toolbox Fieldtrip by Oostenveld et al.(2010) (https://github.com/fieldtrip/fieldtrip), the multivariate temporal response function (mTRF) toolbox version 2.3 by Crosse et al. (2016) (https://github.com/mickcrosse/mTRF-Toolbox), and the NLS toolbox by Ru (2001) were used. 
 
 # Contents:
 - Preprocessing of neural data (code was already given, only adapted to the data set)
