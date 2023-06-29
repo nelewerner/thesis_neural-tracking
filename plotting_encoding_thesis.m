@@ -28,8 +28,7 @@ elecs = { 'Fp1','Fp2','F9','F7','F3','Fz','F4','F8','F10','FC5','FC6','T7','C3',
 ROI = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];   
 
 % Auditory ROI: F3, FZ, F4, FC5, FC6 
-% needs to be commented out when calculating the mTRF of the Region of
-% Interest
+% remove '%' in the following line in order to calculate the mTRF of the Region of Interest
 % ROI = [5,6,7,10,11];
 
 % mother condition (remaining data sets without noise)
@@ -238,7 +237,7 @@ T=[-200:2:800];
 eegdata = [datapath '/preprocessed/PostICA5_n1.mat']; 
 load(eegdata);
 
-% mother condition
+%% mother condition
 plotty.label = preproc.label; % cell array of channel labels
 plotty.avg = squeeze(mean_mother.w)'; % channel data first channels, second dimension time
 plotty.time = T; % vector of time points corresponding to the first dimension of avg 
@@ -257,6 +256,7 @@ cfg = [];
  cfg.markersymbol = 'o';
  cfg.comment = 'xlim';
 
+% create topoplot mother condition
  f2 = figure('Position', get(0, 'Screensize')); 
  cfg.xlim = [-200:200:800];
  ft_topoplotER(cfg,plotty);
@@ -266,7 +266,7 @@ cfg = [];
 
 exportgraphics(gcf, [datapath '/Plots/topoplot-mother.png'],'BackgroundColor','none','ContentType','vector')
 
-% stranger condition
+%% stranger condition
 plotty.label = preproc.label;
 plotty.avg = squeeze(mean_stranger.w)';
 plotty.time = T;
@@ -284,8 +284,8 @@ cfg.markersize = 5;
 cfg.markersymbol = 'o';
 cfg.comment = 'xlim';
 
+% create topoplot stranger condition
 f2 = figure('Position', get(0, 'Screensize'));
- 
 cfg.xlim = [-200:200:800];
 ft_topoplotER(cfg,plotty);
 
